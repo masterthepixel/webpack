@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../node_modules/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../node_modules/swiper/css/swiper.min.css"> ]
+</head>
+
+
+<body class="h-screen font-sans antialiased leading-normal tracking-normal bg-gray-200">
+    <!-- Initialize Swiper -->
+    <script src="../node_modules/swiper/js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>
